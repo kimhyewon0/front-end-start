@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Click Game</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+    <p id="Home">
+       
+        Score :<span id="scoreIs">0</span>
+        <br>
+        Stage :<span id="stageIs">0</span>
+    </p>
+    <div id="game">
+
+        <div id="allBox">
+          
+             <script>
+              var boxes;
+              var boxDivide = document.getElementById('allBox');
+              var cnt=0;
+
+              for(var i = 0;i<9;i++){
+                  for(var j = 0;j<10;j++){
+                      boxes = "<div class=\"box\" id=\"box"+cnt+"\"></div>";
+                      boxDivide.innerHTML += boxes;
+                      cnt++;
+                  }
+              }
+          </script>
+          
+        </div>
+
+    </div>
+         <script src="./app.js"></script>
+
+</body>
+</html>
