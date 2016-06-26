@@ -26,6 +26,8 @@ var todayPhoto = [
      }
      console.log(page, i);
      str += '<img src="'+todayPhoto[i].img+'"> ';
+     str += '<img src="'+todayPhoto[i].img+'"> ';
+
    }
    wrap.innerHTML = str;
    pageCount.innerHTML = page;
